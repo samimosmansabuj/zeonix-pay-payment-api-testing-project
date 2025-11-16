@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Testing</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        
+        <input type="text" placeholder="customer_order_id" name="customer_order_id">
+        <input type="text" placeholder="customer_name" name="customer_name">
+        <input type="text" placeholder="customer_number" name="customer_number">
+        <input type="text" placeholder="customer_amount" name="customer_amount">
+        <input type="email" placeholder="customer_email" name="customer_email">
+        <input type="text" placeholder="method" name="method">
+        <input type="url" placeholder="callback_url " name="callback_url ">
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
